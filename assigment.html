@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="Nav">
+        <div class="one">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <span class="navbar-logo-icon">....</span>
+                    <h1 class="navbar-logo-text">Logo</h1>
+                </div>
+                <nav class="main-nav-links">
+                    <a href="#index">Index</a>
+                    <a href="#display" class="active-link">Display</a>
+                    <a href="#update">Update</a>
+                    <a href="#buy">Buy</a>
+                    <a href="#showfiles">Showfiles</a>
+                    <a href="#class12">Class12</a>
+                </nav>
+                <div class="navbar-right">
+                    <a href="#">Log out</a>
+                    <div class="profile-picture-top">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small_2x/beautiful-latin-woman-avatar-character-icon-free-vector.jpg" alt="User Profile">
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                    <label for="nav-toggle" class="nav-toggle-label">
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                        <div class="icon-bar"></div>
+                    </label>
+                    <div class="dropdown-content">
+                        <a href="#index">Index</a>
+                        <a href="#display">Display</a>
+                        <a href="#update">Update</a>
+                        <a href="#buy">Buy</a>
+                        <a href="#showfiles">Show Files</a>
+                        <a href="#class12">Class 12</a>
+                        <hr>
+                        <a href="#" class="logout-button">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="topbar">
+            <h2>My Profile</h2>
+        </div>
+        <div class="contentbar">
+            <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png" alt="User Profile Image">
+            <div class="block">
+                <div class="b1"><i class="fa-solid fa-cart-shopping"></i> Orders</div>
+                <div class="b2"><i class="fa-solid fa-cart-plus"></i> Store</div>
+            </div>
+            <h1 class="details">Your Details</h1>
+            
+            <form>
+                <div class="form-container">
+                    <div class="form-column">
+                        <div class="form-row">
+                            <label for="student_name">Name:</label>
+                            <input type="text" name="student_name" placeholder="Enter Your Name" id="student_name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="username">Username:</label>
+                            <input type="text" name="username" placeholder="Enter Your Username" id="username" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email ID:</label>
+                            <input type="email" name="email" placeholder="Enter Your Email ID" id="email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="phone">Phone:</label>
+                            <input type="text" name="phone" placeholder="Enter Your Phone Number" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="form-row">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" placeholder="Enter Your Password" id="password" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="pincode">Postal code:</label>
+                            <input type="text" name="pincode" placeholder="Enter Your Pincode" id="pincode" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="exam_interested">Exam:</label>
+                            <input list="exam-options" name="exam_interested" id="exam_interested" placeholder="Select Exam..." required>
+                            <datalist id="exam-options">
+                                <option value="JEE"></option>
+                                <option value="NEET"></option>
+                                <option value="SSC"></option>
+                                <option value="Banking"></option>
+                                <option value="CA"></option>
+                                <option value="10th"></option>
+                                <option value="12th"></option>
+                                <option value="UPSC"></option>
+                                <option value="Other"></option>
+                            </datalist>
+                        </div>
+                        <div class="form-row">
+                            <label for="gender">Gender:</label>
+                            <select name="gender" id="gender" required>
+                                <option value="">--Select--</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <input type="submit" class="btn" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
